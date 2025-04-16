@@ -16,7 +16,7 @@ public class Hooks {
 		TestBase.initDriver();
 		
 	}
-	@AfterMethod
+	@After
 	public void tearDown(Scenario scenario) {
 		if(scenario.isFailed()) {
 			TakesScreenshot screen=(TakesScreenshot)TestBase.getDriver();
@@ -26,7 +26,7 @@ public class Hooks {
 		}}
 		
 		
-	//}
+	
 
 
 }
