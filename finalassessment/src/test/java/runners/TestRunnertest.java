@@ -6,8 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 
 plugin= {"pretty",
 "html:targets/Reports/HtmlReports.html",
-"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-tags="not @SmokeTest"
+"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+
+//tags="not@SmokeTest"
+//,tags="not @RegressionTest"
 )
 public class TestRunnertest extends AbstractTestNGCucumberTests{
 

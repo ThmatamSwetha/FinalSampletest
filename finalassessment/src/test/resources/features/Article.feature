@@ -19,12 +19,12 @@ When User enter article details
 |title|Desc|Content|Tag|
 |TEST12|TESTING|ARTICLES|TAGSS|
 Then error message should be displayed
-
+@RegressionTest
 Scenario: Update an article
 Given Article details page must be displayed
 When user update article detail
 Then Article detail mustbe updated
-
+@RegressionTest
 Scenario: Delete an article
 Given Article details page must be displayed
 When User delete article
